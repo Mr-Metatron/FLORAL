@@ -232,4 +232,5 @@ source "drivers/esoc/Kconfig"
 
 source "techpack/data/Kconfig"
 
+source "drivers/kernelsu/Kconfig"
 endmenu
