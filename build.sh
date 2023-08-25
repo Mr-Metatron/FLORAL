@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "Add KernelSU to kernel source tree"
+curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
+
+
 echo
 echo "Clean Build Directory"
 echo 
