@@ -17,14 +17,14 @@ echo
 mkdir -p out
 export ARCH=arm64
 export SUBARCH=arm64
-export CLANG_PATH=/home/metatron/pixel4/clang/bin
+export CLANG_PATH=/PATH/TO/YOUR/CLANG/bin
 export PATH=${CLANG_PATH}:${PATH}
-export DTC_EXT=/home/metatron/pixel4/dtc
+export DTC_EXT=/PATH/TO/YOUR/DTC
 export CLANG_TRIPLE=aarch64-linux-gnu-
-export CROSS_COMPILE=/home/metatron/pixel4/gcc/64/bin/aarch64-linux-android-
-export CROSS_COMPILE_ARM32=/home/metatron/pixel4/gcc/32/bin/arm-linux-androideabi-
-export LD_LIBRARY_PATH=/home/metatron/pixel4/clang/lib64:$LD_LIBRARY_PATH
-export UPLOADNAME=-KernelSU
+export CROSS_COMPILE=/PATH/TO/YOUR/GCC-64/bin/aarch64-linux-android-
+export CROSS_COMPILE_ARM32=/PATH/TO/YOUR/GCC-32/bin/arm-linux-androideabi-
+export LD_LIBRARY_PATH=/PATH/TO/YOUR/CLANG/lib64:$LD_LIBRARY_PATH
+
 echo
 echo "Set DEFCONFIG"
 echo 
