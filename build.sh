@@ -24,8 +24,12 @@ export UPLOADNAME=-KernelSU
 echo
 echo "Set DEFCONFIG"
 echo 
-make CC=clang AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip O=out kirisakura_defconfig
+make CC=clang AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip O=out docker_defconfig
 
+#make O=out menuconfig
+#make O=out savedefconfig
+
+check-config.sh out/.config
 read -p "按任意键继续！"
 
 echo
