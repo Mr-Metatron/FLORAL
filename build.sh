@@ -34,7 +34,7 @@ make CC=clang AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump ST
 #make O=out savedefconfig
 
 check-config.sh out/.config
-read -p "按任意键继续！"
+read -p "Press any key..."
 
 echo
 echo "Build The Good Stuff"
